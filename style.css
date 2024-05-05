@@ -15,5 +15,11 @@ h1{
 }
 
 p{
-  color: #333333;
+  color: #66666;
+}
+
+.contador{
+  font-size: 36px;
+  margin-top: 20px;
+  color: #e74c3c;
 }
