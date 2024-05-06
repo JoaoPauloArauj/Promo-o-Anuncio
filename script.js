@@ -1,14 +1,13 @@
 const contador = document.querySelector(".contador");
 
-const dataFinal= new  Date('2024-06-15-T23:59:59');
+const dataFinal = new Date('2024-06-153T23:59:59');
 
 function atualizarContador() {
   const hoje = new Date();
   const intervaloTempo = dataFinal - hoje;
   
-  if(intervaloTempo <= 0) {
+  if (intervaloTempo <= 0) {
     contador.textContent = "Promoção encerrada!";
-    
   } else {
     const dias = Math.floor(intervaloTempo / (1000 * 60 * 60 * 24));
     const horas = Math.floor((intervaloTempo % (1000 * 60 * 60 * 24) / (1000 * 60 * 60 * 24)));
